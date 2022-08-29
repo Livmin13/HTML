@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><link rel="stylesheet" href="estilos formulario.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE FORMULARIO</title>
+</head>
+<body style="background-color: coral;">
+    <header>
+    <img src="img/Incap.jpeg" width="100" alt="incap">
+    <h1>LISTAS EN HTML</h1>
+    <h2>MENU NAVEGACION</h2>
+</header>
+<nav>
+<ul>
+    <li type="disc" style="color: red;">HOME</li>
+    <li type="square">Productos</li>
+    <li type="circle">Servicios</li>
+    <li>Contactos</li>
+</ul>
+</nav>
+<section>
+        <!-- Method GET pasa los datos por la url, atravez de parametros// Method POST pasa los datos de forma interna (no se ven)-->
+        <form action="datos.php" method="post"></form>
+        <!-- seccion de marco de formulario-->
+        <fieldset>
+        <!-- seccion de ingresos de nombre-->
+        <label> NOMBRE COMPLETO</label>
+        <input name="nombre" type="text" placeholder="Ingrese se nombre completo" required="">
+        <br><br>
+
+        <!--seccion email-->
+        <label> E-mail</label>
+        <input name="email" type="email" placeholder="Ingrese se Email" required="">
+        <br><br>
+
+        <!-- seccion contraseña-->
+        <label>Contraseña</label>
+        <input name="contraseña" type="password" placeholder="Ingrese su contraseña" required="">
+        <br><br>
+
+            <!-- seccion Hobbies-->
+            <label>Selecciona tus hobbies:
+            </label>
+            <br>
+                <input name="cine" type="checkbox">cine<br>
+                <input name="lectura" type="checkbox">lectura<br>
+                <input name="Deporte" type="checkbox">Deporte<br>
+            <br>
+            <br>
+
+            <!-- Estado civil-->
+
+            <label>Estado civil</label><br>
+                <input name="estcivil" type="radio" value="casado">Casado(a)<br>
+                <input name="estcivil" type="radio" value="soltero">Soltero(a)<br>
+                <input name="estcivil" type="radio" value="viudo">Viudo(a)<br>
+            <br>
+            <br>
+
+            <!-- Seleccionar opciones lista-->
+            <label>PROGRAMAS TECNICOS</label>
+            <select name="select">
+                <option>Seleccione programa...</option>
+                <option>Sistemas</option>
+                <option>Diseño grafico</option>
+                <option>Contabilidad</option>
+            </select>
+            <br>
+            <br>
+            <label>Tu comentario:</label><br>
+                <textarea name="mensaje" cols="40" rows="5"></textarea>
+            </fieldset>
+            <br><br>
+            <!-- seccion de botones furmulario subit : enviar datos cancel: borrar datos ingresados-->
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+            <br>
+            <br>
+            </forms>
+        </section>
+            <!-- seccion de pagina-->
+        <footer>
+            Derechos reservados &copy;2022&#64;Livmin777 
+        </footer>
+</body>
+</html>
